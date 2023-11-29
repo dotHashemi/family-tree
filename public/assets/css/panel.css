@@ -1,0 +1,65 @@
+* {
+    font-family: "Yekan";
+}
+
+#sidebar {
+    height: 100%;
+    min-height: 100vh;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.card-title {
+    font-size: 1.1rem;
+}
+
+.nav-link,
+.with-icon,
+.card-title {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#dot {
+    border: none;
+    border-top: 2px dotted #3a4750;
+    color: #fff;
+    background-color: #fff;
+}
+
+.nav-link {
+    border-radius: 0 !important;
+    color: inherit;
+}
+
+.nav-link:hover {
+    color: inherit;
+}
+
+/* Colors */
+
+body {
+    background-color: #f3f3f3;
+}
+
+#sidebar {
+    background-color: #3a4750;
+}
+
+.page-title,
+.card-title,
+.detail-title {
+    color: #3a4750;
+}
+
+#sidebar {
+    color: #fff;
+}

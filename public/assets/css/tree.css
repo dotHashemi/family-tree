@@ -1,0 +1,15 @@
+* {
+    font-family: "Yekan";
+}
+
+.tree-box {
+    margin: 10px;
+    padding: 30px;
+    border-radius: 0.5rem;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
