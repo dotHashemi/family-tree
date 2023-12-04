@@ -37,7 +37,7 @@
                     <div class="form-floating mb-3">
                         <select name="city" class="form-select" id="input-city">
                             @foreach ($cities as $city)
-                                <option value="{{ $city->id }}">{{ $city->name }}</option>
+                                <option value="{{ $city->id }}" {{ $person->city == $city->id? 'selected': ''}}>{{ $city->name }}</option>
                             @endforeach
                         </select>
                         <label for="input-city">اهل یا محل تولد</label>
@@ -47,7 +47,7 @@
                         <select name="father" class="form-select" id="input-father">
                             <option value="">انتخاب نشده</option>
                             @foreach ($males as $male)
-                                <option value="{{ $male->id }}">{{ $male->firstname . ' ' . $male->lastname }}</option>
+                                <option value="{{ $male->id }}" {{ $person->father == $male->id? 'selected': ''}}>{{ $male->id . ': ' . $male->firstname . ' ' . $male->lastname }}</option>
                             @endforeach
                         </select>
                         <label for="input-father">پدر</label>
@@ -57,7 +57,7 @@
                         <select name="mother" class="form-select" id="input-mother">
                             <option value="">انتخاب نشده</option>
                             @foreach ($females as $female)
-                                <option value="{{ $female->id }}">{{ $female->firstname . ' ' . $female->lastname }}
+                                <option value="{{ $female->id }}" {{ $person->mother == $female->id? 'selected': ''}}>{{ $male->id . ': ' . $female->firstname . ' ' . $female->lastname }}
                                 </option>
                             @endforeach
                         </select>
@@ -66,8 +66,8 @@
 
                     <div class="form-floating mb-3">
                         <select name="gender" class="form-select" id="input-gender">
-                            <option value="male">مرد</option>
-                            <option value="female">زن</option>
+                            <option value="male" {{ $person->gender == 'male'? 'selected': ''}}>مرد</option>
+                            <option value="female" {{ $person->gender == 'female'? 'selected': ''}}>زن</option>
                         </select>
                         <label for="input-gender">جنسیت</label>
                     </div>
