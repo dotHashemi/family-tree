@@ -57,7 +57,7 @@
                         <select name="mother" class="form-select" id="input-mother">
                             <option value="">انتخاب نشده</option>
                             @foreach ($females as $female)
-                                <option value="{{ $female->id }}" {{ $person->mother == $female->id? 'selected': ''}}>{{ $male->id . ': ' . $female->firstname . ' ' . $female->lastname }}
+                                <option value="{{ $female->id }}" {{ $person->mother == $female->id? 'selected': ''}}>{{ $female->id . ': ' . $female->firstname . ' ' . $female->lastname }}
                                 </option>
                             @endforeach
                         </select>
