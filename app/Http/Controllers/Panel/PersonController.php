@@ -18,7 +18,7 @@ class PersonController extends Controller
         $people = Person::where('firstname', 'LIKE', '%' . $request->search . '%')
             ->orWhere('lastname', 'LIKE', '%' . $request->search . '%')
             ->orderBy('id', 'DESC')
-            ->get();
+            ->paginate(20);
 
         return view('panel.people.index', compact('people'));
     }

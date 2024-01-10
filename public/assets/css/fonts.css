@@ -34,7 +34,4 @@
 i[class^='gg'] {
     /* This value will multiple the actual size  */
     --ggs: 0.7;
-    display: inline-block;
-    align-items: center;
-    margin-left: 5px;
 }
