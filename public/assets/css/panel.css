@@ -1,8 +1,8 @@
 * {
-    font-family: 'Vazirmatn RD UI FD';
+    font-family: "Vazirmatn RD UI FD";
 }
 
-i[class^='gg'] {
+i[class^="gg"] {
     --ggs: 0.7;
 }
 
@@ -46,6 +46,10 @@ a {
 
 .nav-link:hover {
     color: inherit;
+}
+
+.text-9 {
+    font-size: 0.9rem;
 }
 
 /* Colors */

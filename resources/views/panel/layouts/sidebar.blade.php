@@ -8,25 +8,25 @@
     <ul class="nav nav-pills flex-column mb-auto text-white">
         <li class="nav-item">
             <a href="{{ route('panel.index') }}" class="nav-link {{ preg_match('#^panel.index.*#', Route::current()->getName()) ? 'active' : '' }}" aria-current="page">
-                <i class="gg-board"></i>
+                <i class="gg-board me-1"></i>
                 پیشخان
             </a>
         </li>
         <li>
             <a href="{{ route('panel.cities.index') }}" class="nav-link {{ preg_match('#^panel.cities.*#', Route::current()->getName()) ? 'active' : '' }}">
-                <i class="gg-attribution"></i>
+                <i class="gg-attribution me-1"></i>
                 شهرها
             </a>
         </li>
         <li>
             <a href="{{ route('panel.people.index') }}" class="nav-link {{ preg_match('#^panel.people.*#', Route::current()->getName()) ? 'active' : '' }}">
-                <i class="gg-user"></i>
+                <i class="gg-user me-1"></i>
                 شخص‌ها
             </a>
         </li>
         <li>
             <a href="{{ route('panel.couples.index') }}" class="nav-link {{ preg_match('#^panel.couples.*#', Route::current()->getName()) ? 'active' : '' }}">
-                <i class="gg-heart"></i>
+                <i class="gg-heart me-1"></i>
                 ازدواج‌ها
             </a>
         </li>
