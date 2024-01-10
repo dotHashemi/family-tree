@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login to TREE</title>
+    
+    <title>ورود به پنل شجره‌نامه</title>
+    
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/panel.css">
 </head>
 
 <body>
 
-    <form action="{{ route('auth.login') }}" method="POST">
+    <div class="container py-5">
+        <div class="row justify-content-center">
 
-        @csrf
+            <div class="col-lg-4 col-md-5 col-sm-10">
 
-        <input name="phone" type="text">
-        <input name="password" type="password">
+                <h3 class="text-center my-3">
+                    پنل کاربری شجره‌نامه
+                </h3>
 
-        <button type="submit">Login</button>
-    </form>
+                <form action="{{ route('auth.login') }}" method="POST">
+                    @csrf
+
+                    <div class="form-floating mb-3">
+                        <input name="phone" type="text" class="form-control" id="input-username">
+                        <label for="input-username">نام کاربری</label>
+                    </div>
+                    <div class="form-floating">
+                        <input name="password" type="password" class="form-control" id="input-password">
+                        <label for="input-password">کلمه‌ی عبور</label>
+                    </div>
+
+                    <div class="my-3 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">ورود</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
 
 </body>
 
