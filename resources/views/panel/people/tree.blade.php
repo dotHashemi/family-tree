@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Round-Dots/misc/UI-Farsi-Digits/Vazirmatn-RD-UI-FD-font-face.min.css"
+        rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/assets/css/tree.css">
 </head>
 

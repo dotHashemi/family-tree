@@ -1,5 +1,9 @@
 * {
-    font-family: "Yekan";
+    font-family: 'Vazirmatn RD UI FD';
+}
+
+i[class^='gg'] {
+    --ggs: 0.7;
 }
 
 #sidebar {
